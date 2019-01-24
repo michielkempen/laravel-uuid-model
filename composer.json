@@ -1,0 +1,28 @@
+{
+    "name": "michielkempen/laravel-uuid-model",
+    "description": "Laravel base model that stores a UUID in the database rather than an incremental unsigned integer.",
+    "keywords": [
+        "Michiel Kempen",
+        "Laravel UUID model"
+    ],
+    "homepage": "https://github.com/michielkempen/laravel-http-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michiel Kempen",
+            "email": "kempenmichiel@gmail.com",
+            "homepage": "https://michielkempen.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": "5.6.*",
+        "webpatser/laravel-uuid": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MichielKempen\\LaravelUuidModel\\": "src"
+        }
+    }
+}
