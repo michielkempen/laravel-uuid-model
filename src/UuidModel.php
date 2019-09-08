@@ -19,6 +19,13 @@ abstract class UuidModel extends Model
 	 */
 	public $incrementing = false;
 
+    /**
+     * The "type" of the primary key ID.
+     *
+     * @var string
+     */
+    protected $keyType = 'string';
+
 	/**
 	 *  Setup model event hooks
 	 */

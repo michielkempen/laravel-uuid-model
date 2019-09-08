@@ -5,7 +5,7 @@
         "Michiel Kempen",
         "Laravel UUID model"
     ],
-    "homepage": "https://github.com/michielkempen/laravel-http-client",
+    "homepage": "https://github.com/michielkempen/laravel-uuid-model",
     "license": "MIT",
     "authors": [
         {
@@ -16,8 +16,8 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "laravel/framework": "~5.6",
+        "php": "^7.1",
+        "laravel/framework": "~5.6|~5.7|~5.8|^6.0",
         "webpatser/laravel-uuid": "^3.0"
     },
     "autoload": {
