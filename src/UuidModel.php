@@ -34,7 +34,9 @@ abstract class UuidModel extends Model
 		parent::boot();
 
 		self::creating(function ($model) {
-			$model->id = (string) Uuid::generate(4);
+			if($model->id === null) {
+                $model->id = (string) Uuid::generate(4);
+            }
 		});
 	}
 
