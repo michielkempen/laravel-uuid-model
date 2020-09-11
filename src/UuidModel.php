@@ -7,28 +7,12 @@ use Webpatser\Uuid\Uuid;
 
 abstract class UuidModel extends Model
 {
-	/**
-	 * The attributes that are mass assignable.
-	 *
-	 * @var array
-	 */
 	protected $guarded = [];
 
-	/**
-	 * @var bool 
-	 */
 	public $incrementing = false;
 
-    /**
-     * The "type" of the primary key ID.
-     *
-     * @var string
-     */
     protected $keyType = 'string';
 
-	/**
-	 *  Setup model event hooks
-	 */
 	public static function boot()
 	{
 		parent::boot();
@@ -40,9 +24,6 @@ abstract class UuidModel extends Model
 		});
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getId(): string
 	{
 		return $this->id;
