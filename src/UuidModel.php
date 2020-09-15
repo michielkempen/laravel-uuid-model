@@ -3,7 +3,6 @@
 namespace MichielKempen\LaravelUuidModel;
 
 use Illuminate\Database\Eloquent\Model;
-use Webpatser\Uuid\Uuid;
 
 abstract class UuidModel extends Model
 {
@@ -19,7 +18,7 @@ abstract class UuidModel extends Model
 
 		self::creating(function ($model) {
 			if($model->id === null) {
-                $model->id = (string) Uuid::generate(4);
+                $model->id = Uuid::new()->generate();
             }
 		});
 	}
