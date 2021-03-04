@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 abstract class UuidModel extends Model
 {
-	protected $guarded = [];
-
 	public $incrementing = false;
 
     protected $keyType = 'string';
